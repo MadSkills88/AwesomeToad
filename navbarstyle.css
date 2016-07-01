@@ -1,0 +1,229 @@
+a {
+	color: #a0ac48;
+	text-decoration: none;
+}
+.wrap ol,
+.wrap ul {
+	margin: 0;
+	padding: 0;
+}
+.wrap li {
+	list-style-type: none;
+}
+.wrap {
+	margin: 0 auto;
+}
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+.genesis-nav-menu {
+	clear: both;
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	width: 100%;
+}
+
+.genesis-nav-menu li {
+	float: none;
+	list-style-type: none;
+}
+
+.genesis-nav-menu li li {
+	margin-left: 0;
+}
+
+.genesis-nav-menu .menu-item {
+	display: inline-block;
+	text-align: center;
+}
+
+.genesis-nav-menu .menu-item:hover {
+	position: relative;
+}
+
+.genesis-nav-menu li a {
+	color: #000;
+	display: block;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding: 30px 24px;     /** THE HEIGHT OF NAVBAR**/
+	text-transform: uppercase;
+}
+
+.genesis-nav-menu a:hover {
+	color: #a0ac48;
+}
+
+.genesis-nav-menu .sub-menu {
+	left: -9999px;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: opacity .4s ease-in-out;
+	-moz-transition:    opacity .4s ease-in-out;
+	-ms-transition:     opacity .4s ease-in-out;
+	-o-transition:      opacity .4s ease-in-out;
+	transition:         opacity .4s ease-in-out;
+	width: 200px;
+	z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu:after,
+.genesis-nav-menu .sub-menu:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	border-bottom-color: #000;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.genesis-nav-menu .sub-menu:after {
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.genesis-nav-menu .sub-menu:before {
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu:after,
+.genesis-nav-menu .sub-menu .sub-menu:before {
+	display: none;
+}
+
+.genesis-nav-menu .sub-menu a {
+	background-color: #000;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 0;
+	padding: 20px;
+	position: relative;
+	text-transform: none;
+	width: 180px;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+	margin: -55px 0 0;
+	width: 200px;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+	left: 50%;
+	margin-left: -100px;
+	opacity: 1;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu > .menu-item:hover > .sub-menu {
+	left: 169px;
+	margin-left: 0px;
+	opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+	padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+	padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+	color: #fff;
+	float: right;
+	list-style-type: none;
+	padding: 30px 0;
+}
+
+.genesis-nav-menu > .right > a {
+	display: inline;
+	padding: 0;
+}
+
+.genesis-nav-menu > .rss > a {
+	margin-left: 48px;
+}
+
+.genesis-nav-menu > .search {
+	padding: 10px 0 0;
+}
+
+/* ## Primary Navigation
+--------------------------------------------- */
+
+.nav-primary {
+	background-color: #fff;
+	margin: 0 auto;
+	width: 100%;
+	z-index: 99;
+}
+
+.admin-bar .nav-primary.fixed {
+	top: 32px;
+}
+
+.nav-primary.fixed {
+	top:0;
+    position:fixed!important;
+}
+
+.nav-primary.fixed + section {
+	border-top: 74px solid transparent;	
+}
+
+.nav-primary .small-site-title {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition:    all 0.5s ease-in-out;
+	-ms-transition:     all 0.5s ease-in-out;
+	-o-transition:      all 0.5s ease-in-out;
+	transition:         all 0.5s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background-color: #000;
+}
+
+.nav-primary .wrap .small-site-title a,
+.nav-primary .wrap .small-site-title a:hover {
+	color: #fff;
+}
+
+.nav-primary.fixed .small-site-title {
+	opacity: 1;
+}
+
+.nav-primary .genesis-nav-menu .sub-menu a:hover {
+	color: #a0ac48;
+}
+
+/* ## Secondary Navigation
+--------------------------------------------- */
+
+.nav-secondary {
+	background-color: #fff;
+}
+
+/* ## Responsive Menu
+--------------------------------------------- */
+
+.responsive-menu-icon {
+	cursor: pointer;
+	display: none;
+}
+
+.responsive-menu-icon::before {
+	color: #000;
+	content: "\f333";
+	display: block;
+	font: normal 24px/1 'dashicons';
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+}
+
