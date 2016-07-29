@@ -1,4 +1,4 @@
 # AwesomeToad
-Portfolio website of all my creations
+Portfolio website template
 
 http://studio-anthonybao.rhcloud.com/
